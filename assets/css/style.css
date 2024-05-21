@@ -2445,11 +2445,6 @@ img {
 /*--------------------------------------------------------------
 #0.3	header
 --------------------------------------------------------------*/
-.site-header {
-  /* navigation open and close btn hide for width screen */
-  /* style for navigation less than 992px */
-  /*navbar collaps less then 992px*/
-}
 
 .site-header .navigation {
   background-color: #fff;
@@ -2492,9 +2487,6 @@ img {
 }
 
 @media screen and (min-width: 992px) {
-  .site-header #navbar {
-    /*** hover effect ***/
-  }
   .site-header #navbar li {
     position: relative;
   }
@@ -2612,9 +2604,6 @@ img {
 }
 
 @media screen and (min-width: 992px) {
-  .site-header #navbar {
-    /*** hover effect ***/
-  }
   .site-header #navbar .has-mega-menu {
     position: static;
   }
@@ -2715,9 +2704,6 @@ img {
 }
 
 @media (max-width: 991px) {
-  .site-header {
-    /* class for show hide navigation */
-  }
   .site-header .container {
     width: 100%;
   }
@@ -4012,13 +3998,6 @@ img {
 /*--------------------------------------------------------------
 #0.5	footer
 --------------------------------------------------------------*/
-.site-footer {
-  /*** about widget ***/
-  /*** service-links-widget ***/
-  /*** quick-links-widget ***/
-  /*** twitter-feed-widget ***/
-  /*** copyright-info ***/
-}
 
 .site-footer .upper-footer {
   background-color: #051829;
@@ -7043,9 +7022,6 @@ img {
 /*--------------------------------------------------------------
 #6.0	contact-pg-section
 --------------------------------------------------------------*/
-.contact-pg-section {
-  /*** contact form ***/
-}
 
 .contact-pg-section .contact-info ul li {
   padding-left: 45px;
@@ -7280,12 +7256,6 @@ img {
 --------------------------------------------------------------*/
 .blog-single {
   background-color: #f2f2f2;
-}
-
-.blog-single-content {
-  /*** post ***/
-  /*** tags ***/
-  /*** comments ***/
 }
 
 .blog-single-content ul {
@@ -7867,11 +7837,6 @@ img {
 /*--------------------------------------------------------------
 #12.0	products-section
 --------------------------------------------------------------*/
-.shop-details-main-content {
-  /*** product slider ***/
-  /*** product info ***/
-  /*** upsell product **/
-}
 
 .shop-details-main-content .shop-single-slider-wrapper .slider-for {
   text-align: center;
