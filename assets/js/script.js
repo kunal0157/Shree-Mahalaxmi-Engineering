@@ -860,9 +860,8 @@
     -------------------------------------------*/
   // HTML FOR COLOR SWITCHER
   var switcherHtml =
-    '<div class="style-switcher-box"> <div class="switcher-inner"><h5>Style Switcher</h5> <div class="main-list"> <div class="list"> <span class="list-title">Skin color</span> <div class="sublist"> <ul class="color-chager"> <li class="color-default"><img src="assets/images/switcher-color/img-1.jpg" alt></li> <li class="color-style1"><img src="assets/images/switcher-color/img-2.jpg" alt></li> <li class="color-style2"><img src="assets/images/switcher-color/img-3.jpg" alt></li> <li class="color-style3"><img src="assets/images/switcher-color/img-4.jpg" alt></li> </ul> </div> </div> <div class="list layout"> <span class="list-title">Layout</span> <div class="sublist"> <ul class="layout-sw"> <li>Full width</li> <li class="box">Box</li> </ul> </div> </div> </div> <p><span>Note: </span> This template is build with SASS. The skin color is only demo. You can change the color scheme as your like. </p> </div> <button class="toggle-btn"><i class="fa fa-cog"></i></button> </div>';
-  var blankStyleInject =
-    '<link href="assets/css/blank-color.css" rel="stylesheet" title="switchstyle">';
+    '<div class="style-switcher-box"> <div class="switcher-inner"><h5>Style Switcher</h5> <div class="main-list"> <div class="list"> <span class="list-title">Skin color</span> <div class="sublist"> <ul class="color-chager"> <li class="color-default"></li> <li class="color-style1"></li> <li class="color-style2"></li> <li class="color-style3"></li> </ul> </div> </div> <div class="list layout"> <span class="list-title">Layout</span> <div class="sublist"> <ul class="layout-sw"> <li>Full width</li> <li class="box">Box</li> </ul> </div> </div> </div> <p><span>Note: </span> This template is build with SASS. The skin color is only demo. You can change the color scheme as your like. </p> </div> <button class="toggle-btn"><i class="fa fa-cog"></i></button> </div>';
+  var blankStyleInject = '<link href="" rel="stylesheet" title="switchstyle">';
   var htmlHead = $("head");
 
   $("body").append(switcherHtml);

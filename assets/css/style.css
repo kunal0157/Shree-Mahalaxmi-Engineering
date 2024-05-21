@@ -361,9 +361,6 @@ img {
 }
 
 /**** style for box layout ***/
-.box-layout {
-  /*** style for box layout ***/
-}
 
 @media screen and (min-width: 1200px) {
   .box-layout {
@@ -2093,9 +2090,6 @@ img {
 }
 
 /*** shop sidebar ***/
-.shop-sidebar {
-  /*** range filtering ***/
-}
 
 @media (max-width: 1199px) {
   .shop-sidebar {
