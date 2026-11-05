@@ -1,0 +1,339 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* ── Primary darks (header, footer, dark sections) ── */
+  --color-charcoal-950: #0d1117;
+  --color-charcoal-900: #111827;
+  --color-charcoal-800: #1a1a2e;
+  --color-charcoal-700: #242438;
+
+  /* ── Light backgrounds (most content sections) ── */
+  --color-surface-white: #ffffff;
+  --color-surface-offwhite: #f8f9fa;
+  --color-surface-warm: #f1f0ee;
+  --color-surface-stone: #e8e6e1;
+  --color-surface-muted: #ddd9d2;
+
+  /* ── Accent: Industrial Amber/Orange ── */
+  --color-accent-500: #d97706;
+  --color-accent-600: #b45309;
+  --color-accent-700: #92400e;
+  --color-accent-400: #f59e0b;
+  --color-accent-300: #fbbf24;
+
+  /* ── Secondary: Steel / Slate blue ── */
+  --color-steel-700: #334155;
+  --color-steel-600: #475569;
+  --color-steel-500: #64748b;
+  --color-steel-400: #94a3b8;
+  --color-steel-300: #cbd5e1;
+  --color-steel-200: #e2e8f0;
+
+  /* ── Text ── */
+  --color-text-dark: #1a1a1a;
+  --color-text-body: #374151;
+  --color-text-muted: #6b7280;
+  --color-text-light: #f0f0f0;
+  --color-text-light-muted: #c0c0c0;
+
+  /* ── Borders ── */
+  --color-border-light: #e5e1db;
+  --color-border-dark: #2a2a3e;
+
+  /* ── Semantic ── */
+  --color-background: #f8f9fa;
+  --color-foreground: #1a1a1a;
+
+  /* ── Fonts ── */
+  --font-sans: var(--font-inter), 'Inter', sans-serif;
+  --font-heading: var(--font-outfit), 'Outfit', sans-serif;
+}
+
+/* ================================================================
+   BASE
+   ================================================================ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-surface-offwhite);
+  color: var(--color-text-body);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ================================================================
+   SCROLLBAR — neutral, warm
+   ================================================================ */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-surface-warm);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-steel-400);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent-500);
+}
+
+/* ================================================================
+   SECTION PATTERNS — alternating light / dark
+   ================================================================ */
+
+.section-light {
+  background: var(--color-surface-offwhite);
+  color: var(--color-text-dark);
+}
+
+.section-light-alt {
+  background: var(--color-surface-warm);
+  color: var(--color-text-dark);
+}
+
+.section-light-stone {
+  background: var(--color-surface-stone);
+  color: var(--color-text-dark);
+}
+
+.section-dark {
+  background: var(--color-charcoal-900);
+  color: var(--color-text-light);
+}
+
+.section-dark-alt {
+  background: var(--color-charcoal-800);
+  color: var(--color-text-light);
+}
+
+/* Legacy gradient classes → remapped to the new system */
+.section-gradient-1 {
+  background: var(--color-surface-offwhite);
+  color: var(--color-text-dark);
+}
+.section-gradient-2 {
+  background: var(--color-charcoal-900);
+  color: var(--color-text-light);
+}
+.section-gradient-3 {
+  background: var(--color-surface-warm);
+  color: var(--color-text-dark);
+}
+
+/* ================================================================
+   CARD STYLES
+   ================================================================ */
+
+/* Light card — used on DARK section backgrounds */
+.card-light {
+  background: var(--color-surface-white);
+  border: 1px solid var(--color-border-light);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+.card-light:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transform: translateY(-3px);
+}
+
+/* Elevated card — used on LIGHT section backgrounds */
+.card-elevated {
+  background: var(--color-surface-white);
+  border: 1px solid var(--color-border-light);
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 4px 12px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+}
+.card-elevated:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1), 0 8px 32px rgba(0, 0, 0, 0.06);
+  transform: translateY(-3px);
+}
+
+/* Dark card — used on LIGHT section backgrounds for contrast */
+.card-dark {
+  background: var(--color-charcoal-900);
+  border: 1px solid var(--color-border-dark);
+  border-radius: 12px;
+  color: var(--color-text-light);
+  transition: all 0.3s ease;
+}
+.card-dark:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+}
+
+/* Legacy glass-card → remapped to card-elevated */
+.glass-card {
+  background: var(--color-surface-white);
+  border: 1px solid var(--color-border-light);
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 4px 12px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+}
+.glass-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1), 0 8px 32px rgba(0, 0, 0, 0.06);
+  transform: translateY(-3px);
+}
+
+/* ================================================================
+   ACCENT TEXT
+   ================================================================ */
+
+.text-accent {
+  color: var(--color-accent-500);
+}
+
+/* Legacy gradient-text → solid accent color */
+.gradient-text {
+  color: var(--color-accent-500);
+  -webkit-text-fill-color: var(--color-accent-500);
+}
+
+/* ================================================================
+   ACCENT UNDERLINE — replaces glow-line
+   ================================================================ */
+
+.accent-line {
+  height: 3px;
+  width: 60px;
+  background: var(--color-accent-500);
+  border-radius: 2px;
+}
+
+/* Legacy glow-line → solid accent underline */
+.glow-line {
+  height: 3px;
+  background: var(--color-accent-500);
+  border-radius: 2px;
+}
+
+/* ================================================================
+   SERVICE ICON CONTAINER
+   ================================================================ */
+
+.icon-glow {
+  background: var(--color-accent-500);
+  border: none;
+  border-radius: 12px;
+  color: white;
+}
+
+/* ================================================================
+   ANIMATIONS — simplified set
+   ================================================================ */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+.animate-scale-in {
+  animation: scaleIn 0.5s ease-out forwards;
+}
+
+/* Legacy classes — map to simplified animations */
+.animate-slide-in-left {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+.animate-slide-in-right {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+.animate-float {
+  /* removed — no-op */
+}
+.animate-pulse-glow {
+  /* removed — no-op */
+}
+
+/* ================================================================
+   INTERSECTION OBSERVER — reveal system
+   ================================================================ */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ================================================================
+   BEFORE-AFTER SLIDER
+   ================================================================ */
+
+.ba-slider {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+.ba-slider .ba-before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* ================================================================
+   WHATSAPP FLOATING BUTTON
+   ================================================================ */
+
+.whatsapp-btn {
+  background: #25D366;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  transition: all 0.3s ease;
+}
+.whatsapp-btn:hover {
+  box-shadow: 0 6px 30px rgba(37, 211, 102, 0.6);
+  transform: scale(1.1);
+}
+
+/* ================================================================
+   UTILITY HELPERS
+   ================================================================ */
+
+/* Warm border bottom — section divider alternative */
+.border-accent {
+  border-color: var(--color-accent-500);
+}
+
+/* Top accent strip — add visual anchor to cards or sections */
+.accent-top {
+  border-top: 3px solid var(--color-accent-500);
+}
