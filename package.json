@@ -8,6 +8,9 @@
     "start": "next start",
     "lint": "eslint"
   },
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "dependencies": {
     "next": "16.4.3",
     "nodemailer": "^10.2.1",
