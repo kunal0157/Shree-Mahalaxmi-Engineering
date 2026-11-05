@@ -1,5 +1,5 @@
 "use client";
-import useReveal from "../hooks/useReveal";
+import useReveal from "@/hooks/useReveal";
 
 const CAPABILITIES = [
   {

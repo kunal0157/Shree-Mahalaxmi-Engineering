@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import useReveal from "../hooks/useReveal";
+import useReveal from "@/hooks/useReveal";
 
 const SERVICES = [
   {

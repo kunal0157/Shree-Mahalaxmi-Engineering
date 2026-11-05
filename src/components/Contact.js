@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import useReveal from "../hooks/useReveal";
+import useReveal from "@/hooks/useReveal";
 
 export default function Contact() {
   const sectionRef = useReveal();
