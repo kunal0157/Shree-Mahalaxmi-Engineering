@@ -53,12 +53,12 @@ const SERVICES = [
     ],
   },
   {
-    title: "BMC Machining",
+    title: "VMC Machining",
     description:
-      "Heavy-duty machining of blocks, mounting plates, and complex industrial components on boring-milling-centre machines.",
-    image: "/images/services/bmc.jpg",
+      "High-precision machining of blocks, mounting plates, and complex industrial components on vertical machining centres.",
+    image: "/images/services/vmc.jpg",
     capabilities: [
-      "Precision boring",
+      "Precision milling",
       "Multi-operation setup",
       "Heavy components",
       "Complex assemblies",

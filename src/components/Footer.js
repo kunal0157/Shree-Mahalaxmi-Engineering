@@ -7,7 +7,7 @@ const SERVICES = [
   "Milling Works",
   "Plano Miller Works",
   "CNC Machining",
-  "BMC Machining",
+  "VMC Machining",
   "Planning Machine Works",
   "Lathe Works",
   "Grinding Works",

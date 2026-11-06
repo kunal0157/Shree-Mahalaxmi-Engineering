@@ -16,9 +16,9 @@ const outfit = Outfit({
 export const metadata = {
   title: "Shree Mahalaxmi Engineering | Precision Job Work & Custom Machine Parts – Ahmedabad",
   description:
-    "Shree Mahalaxmi Engineering, Ahmedabad – Specialists in precision engineering job work and custom machine-parts manufacturing. Services include Shaping, Milling, Plano Miller, CNC Machining, BMC Machining, Planning, Lathe, Grinding & Drilling works.",
+    "Shree Mahalaxmi Engineering, Ahmedabad – Specialists in precision engineering job work and custom machine-parts manufacturing. Services include Shaping, Milling, Plano Miller, CNC Machining, VMC Machining, Planning, Lathe, Grinding & Drilling works.",
   keywords:
-    "engineering job work Ahmedabad, custom machine parts manufacturer, CNC machining Ahmedabad, milling job work, lathe works, shaping works, grinding works, plano miller Ahmedabad, BMC machining, drilling works, Chirag Estate CTM Amraiwadi machine shop, precision manufacturing Gujarat India",
+    "engineering job work Ahmedabad, custom machine parts manufacturer, CNC machining Ahmedabad, milling job work, lathe works, shaping works, grinding works, plano miller Ahmedabad, VMC machining, drilling works, Chirag Estate CTM Amraiwadi machine shop, precision manufacturing Gujarat India",
   metadataBase: new URL("https://shreemahalaxmiengineering.com"),
   alternates: {
     canonical: "/",
@@ -112,7 +112,7 @@ const jsonLd = {
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Shaping Works" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Grinding Works" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Plano Miller Works" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "BMC Machining" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "VMC Machining" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Planning Machine Works" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Drilling Works" } }
     ]

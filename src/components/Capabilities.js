@@ -27,10 +27,10 @@ const CAPABILITIES = [
     features: ["Tight tolerances", "Complex geometry", "Batch consistency", "Multi-axis capability"],
   },
   {
-    title: "BMC Machining",
-    description: "Boring, milling & complex component processing",
+    title: "VMC Machining",
+    description: "Vertical milling & complex component processing",
     icon: "⊞",
-    features: ["Precision boring", "Multi-operation setup", "Heavy components", "Complex assemblies"],
+    features: ["Precision milling", "Multi-operation setup", "Heavy components", "Complex assemblies"],
   },
   {
     title: "Planning Machine",

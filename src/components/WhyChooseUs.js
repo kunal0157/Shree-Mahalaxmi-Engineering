@@ -14,7 +14,7 @@ const REASONS = [
   },
   {
     title: "9+ In-House Machine Operations",
-    description: "Shaping, Plano Milling, Heavy BMC Boring, CNC, Lathe Turning, Precision Grinding and Radial Drilling eliminating multi-vendor delays.",
+    description: "Shaping, Plano Milling, Heavy VMC Milling, CNC, Lathe Turning, Precision Grinding and Radial Drilling eliminating multi-vendor delays.",
     tag: "Capability",
   },
   {

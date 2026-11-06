@@ -8,7 +8,7 @@ const SERVICES = [
   "Lathe",
   "Shaping",
   "Plano Miller",
-  "BMC Machining",
+  "VMC Machining",
   "Grinding",
   "Drilling",
   "Planning Machine",
